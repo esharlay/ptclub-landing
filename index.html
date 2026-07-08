@@ -23,7 +23,10 @@
         <a class="header__link" href="#reviews">Отзывы</a>
         <a class="header__link" href="#location">Локация</a>
       </nav>
-      <a class="header__phone" href="tel:+70000000000">+7 000 000-00-00</a>
+      <div class="header__contacts">
+        <a class="header__contact" href="mailto:info@ptclub.ru">info@ptclub.ru</a>
+        <a class="header__contact" href="tel:+74951503447">+7 (495) 150-34-47</a>
+      </div>
       <button class="header__burger" type="button" data-burger aria-label="Открыть меню">
         <span class="header__burger-line"></span>
         <span class="header__burger-line"></span>
@@ -36,7 +39,7 @@
       <div class="hero__container container">
         <div class="hero__content reveal">
           <p class="hero__eyebrow">Новая площадка PT Club</p>
-          <h1 class="hero__title">Теннис в Нахабино с удобным расписанием и опытными тренерами</h1>
+          <h1 class="hero__title">Теннис в Нахабино на крытых кортах</h1>
           <p class="hero__text">Качественные крытые корты, большой выбор свободного времени для взрослых и детей, индивидуальные и групповые тренировки по доступной стоимости.</p>
           <div class="hero__actions">
             <a class="button button--primary" href="#lead">Записаться на пробную тренировку</a>
@@ -64,11 +67,38 @@
         <div class="reason__grid">
           <div class="reason__content reveal">
             <p class="reason__text">Во многих клубах хорошие вечерние часы и выходные заняты постоянными клиентами. Чтобы подобрать удобное время для тренировок, приходится ждать неделями.</p>
-            <p class="reason__text">Поэтому PT Club открывает новую площадку в Нахабино. Мы запускаем занятия на двух качественных крытых кортах и сразу формируем новое расписание, в котором пока еще много свободных мест.</p>
+            <p class="reason__text">Поэтому PT Club запускает занятия в Нахабино на базе теннисного клуба Баума. Сейчас расписание только формируется, поэтому еще можно выбрать удобные дневные, вечерние и выходные часы.</p>
+            <div class="reason__panel">
+              <h3 class="reason__panel-title">Что важно для регулярных тренировок</h3>
+              <ul class="reason__list">
+                <li>2 крытых корта с покрытием хард и комфортной температурой летом и зимой</li>
+                <li>много свободного времени в дневные часы</li>
+                <li>детские и взрослые группы в будни и выходные</li>
+                <li>специальные условия для тех, кто хочет много играть или тренируется профессионально</li>
+              </ul>
+            </div>
           </div>
-          <div class="reason__gallery reveal reveal--delay">
-            <div class="placeholder reason__photo"><span class="placeholder__label">Фото комплекса</span></div>
-            <div class="placeholder reason__photo reason__photo--small"><span class="placeholder__label">Фото корта</span></div>
+          <div class="reason__slider court-slider" data-court-slider>
+            <div class="court-slider__viewport">
+              <div class="court-slider__slide placeholder is-active" data-court-slide>
+                <img class="court-slider__image" src="assets/cort_01.jpg" alt="Крытый корт теннисного клуба Баума">
+              </div>
+              <div class="court-slider__slide placeholder" data-court-slide>
+                <img class="court-slider__image" src="assets/cort_02.jpg" alt="Второй крытый корт теннисного клуба Баума">
+              </div>
+              <div class="court-slider__badge">
+                <span class="court-slider__badge-number">2</span>
+                <span class="court-slider__badge-text">крытых корта с покрытием хард</span>
+              </div>
+            </div>
+            <div class="court-slider__controls" aria-label="Переключение фото кортов">
+              <button class="court-slider__button" type="button" data-court-prev aria-label="Предыдущее фото"></button>
+              <div class="court-slider__dots">
+                <button class="court-slider__dot is-active" type="button" data-court-dot="0" aria-label="Показать первое фото"></button>
+                <button class="court-slider__dot" type="button" data-court-dot="1" aria-label="Показать второе фото"></button>
+              </div>
+              <button class="court-slider__button court-slider__button--next" type="button" data-court-next aria-label="Следующее фото"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -88,38 +118,54 @@
       <div class="coaches__container container">
         <div class="section__head section__head--center reveal">
           <p class="section__eyebrow">Тренеры PT Club</p>
-          <h2 class="section__title">Главное в теннисе - не корт, а тренер</h2>
+          <h2 class="section__title">Главное в теннисе - <nobr>не корт, а тренер</nobr></h2>
           <p class="section__subtitle">Занятия проводят два тренера PT Club, которые уже много лет работают с нашими учениками. Мы не экспериментируем с качеством обучения: те же тренеры, тот же подход и те же стандарты.</p>
         </div>
         <div class="coaches__grid">
           <article class="coach-card reveal">
             <div class="placeholder coach-card__photo">
-                <img src="assets/trainer-1.png" alt="Фото Андрея Данилюка">
+                <img src="assets/trainer-1.jpg" alt="Фото Андрея Данилюка">
             </div>
             <div class="coach-card__body">
-              <p class="coach-card__role">Тренер для взрослых и детей</p>
+              <p class="coach-card__role">Тренерский стаж с 2010 года</p>
               <h3 class="coach-card__name">Андрей Данилюк</h3>
               <ul class="coach-card__list">
-                <li>Стаж: 18 лет</li>
-                <li>Достижения: КМС, МГАФК, PTR-professional, сертификат ФТР</li>
-                <li>Специализация: техника, подача, игра на счет</li>
+                <li>Высшее образование</li>
+                <li>Качественное и подробное объяснение</li>
+                <li>Ответственность за результат и стабильный прогресс</li>
               </ul>
-              <p class="coach-card__text">Помогает ученикам уверенно прогрессировать без перегруза и хаотичных упражнений.</p>
+              <p class="coach-card__text">Если вам необходимы победы на турнирах, интеллектуальные теннисные размышления, здравая оценка происходящего и большие возможности для развития - вам к нему.</p>
             </div>
           </article>
           <article class="coach-card reveal reveal--delay">
             <div class="placeholder coach-card__photo">
-                <img src="assets/trainer-2.jpg" alt="Фото Екатерины Соколовой">
+                <img src="assets/trainer-2.jpg" alt="Фото Романа Хохрякова">
             </div>
             <div class="coach-card__body">
-              <p class="coach-card__role">Детский и индивидуальный тренер</p>
-              <h3 class="coach-card__name">Екатерина Соколова</h3>
+              <p class="coach-card__role">Тренерский стаж с 2018 года</p>
+              <h3 class="coach-card__name">Роман Хохряков</h3>
               <ul class="coach-card__list">
-                <li>Стаж: 9 лет</li>
-                <li>Достижения: призеры детских клубных турниров</li>
-                <li>Специализация: начальный уровень, координация, стабильность</li>
+                <li>Мастер групповых тренировок</li>
+                <li>Быстрый спортивный прогресс и высокие результаты</li>
+                <li>Музыкальная артистичность и грация в тренировочном процессе</li>
               </ul>
-              <p class="coach-card__text">Строит понятные тренировки, где ученику комфортно учиться и видеть результат.</p>
+              <p class="coach-card__text">Обладает секретным навыком: если попросите его "А сыграй-ка нам, Барин!", доставит вам акустическое удовольствие.</p>
+            </div>
+          </article>
+          <article class="coach-card coach-card--secret reveal">
+            <div class="placeholder coach-card__photo coach-card__photo--secret">
+              <img src="assets/trainer-secret.jpg" alt="Фото секретного тренера">
+              <span class="coach-card__secret-badge">Секретный тренер</span>
+            </div>
+            <div class="coach-card__body">
+              <p class="coach-card__role">Никнейм: Ник</p>
+              <h3 class="coach-card__name">Секретный тренер</h3>
+              <ul class="coach-card__list">
+                <li>Более 30 лет стажа</li>
+                <li>Мастер ОФП и СФП</li>
+                <li>Длительное время работал с игроками первой сотни</li>
+              </ul>
+              <p class="coach-card__text">Это не рандомный человек. Обладает широким набором специальных упражнений для постановки идеальной техники. Весьма требователен и пунктуален. Если вам нужен результат с первого раза - вам к нему.</p>
             </div>
           </article>
         </div>
@@ -135,33 +181,33 @@
         <div class="benefits__grid">
           <article class="benefit-card reveal">
             <span class="benefit-card__icon">01</span>
-            <h3 class="benefit-card__title">Удобное расписание</h3>
-            <p class="benefit-card__text">Большой выбор свободного времени в будни и выходные.</p>
+            <h3 class="benefit-card__title">Крытые корты хард</h3>
+            <p class="benefit-card__text">2 корта с качественным покрытием и комфортной температурой в любое время года.</p>
           </article>
           <article class="benefit-card reveal">
             <span class="benefit-card__icon">02</span>
-            <h3 class="benefit-card__title">Качественные корты</h3>
-            <p class="benefit-card__text">Современное покрытие и комфортные условия для тренировок.</p>
+            <h3 class="benefit-card__title">Просторная игра</h3>
+            <p class="benefit-card__text">Большие задние и боковые забеги, качественное освещение кортов.</p>
           </article>
           <article class="benefit-card reveal">
             <span class="benefit-card__icon">03</span>
-            <h3 class="benefit-card__title">Доступная стоимость</h3>
-            <p class="benefit-card__text">Высокий уровень обучения без переплаты за премиальную инфраструктуру.</p>
+            <h3 class="benefit-card__title">Комфорт до и после игры</h3>
+            <p class="benefit-card__text">Просторные раздевалки с туалетом и душевыми, отдельная детская раздевалка.</p>
           </article>
           <article class="benefit-card reveal">
             <span class="benefit-card__icon">04</span>
-            <h3 class="benefit-card__title">Индивидуальный подход</h3>
-            <p class="benefit-card__text">Программы для взрослых, детей и игроков разного уровня подготовки.</p>
+            <h3 class="benefit-card__title">Тренировки видно из кафе</h3>
+            <p class="benefit-card__text">Видеотрансляции занятий в кафе, вендинговые аппараты и комфортная зона ожидания.</p>
           </article>
           <article class="benefit-card reveal">
             <span class="benefit-card__icon">05</span>
-            <h3 class="benefit-card__title">Удобное расположение</h3>
-            <p class="benefit-card__text">Нахабино, удобный подъезд и парковка рядом с комплексом.</p>
+            <h3 class="benefit-card__title">Турниры и группы</h3>
+            <p class="benefit-card__text">Турниры Российского теннисного тура, внутренние турниры клуба, детские и взрослые группы.</p>
           </article>
           <article class="benefit-card reveal">
             <span class="benefit-card__icon">06</span>
-            <h3 class="benefit-card__title">Групповые и индивидуальные занятия</h3>
-            <p class="benefit-card__text">Выберите формат, который подходит именно вам.</p>
+            <h3 class="benefit-card__title">Инфраструктура комплекса</h3>
+            <p class="benefit-card__text">Большая парковка, зарядные станции, 2 ледовые арены, залы для ОФП и СФП.</p>
           </article>
         </div>
       </div>
